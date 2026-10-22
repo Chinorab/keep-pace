@@ -4,7 +4,7 @@ Hands-Only CPR coach Lens for SPECS (Learn AR with SPECS hackathon, https://lear
 Project: `D:\claude\keep-pace` (Lens Studio 5.24.1, SPECS Base Template). CLAD (`ls-clad@ls-extensions`) installed.
 
 ## Current step
-Steps 5 and 6 drafted (2026-10-22, user said "continue"): README.md (sourced problem, AR design choices, CLAD vs user decisions, tests, honest preview limits), LICENSE (MIT, holder "Chinorab" = the GitHub account; change if the user wants their name), devpost/video-script.md (2:42 plan, no music), devpost/devpost-description.md. Step 7: local git repo initialized on `main` with one commit; .gitignore excludes Cache, Workspaces, PluginsUserPreferences, tool folders, MCP configs and spk_debug_key.pem (private key). NOT pushed: creating the public GitHub repo needs the user's explicit go.
+Steps 5 and 6 drafted (2026-10-22, user said "continue"): README.md (sourced problem, AR design choices, CLAD vs user decisions, tests, honest preview limits), LICENSE (MIT, holder "Chinorab" = the GitHub account; change if the user wants their name), devpost/video-script.md (2:42 plan, no music), devpost/devpost-description.md. Step 7: local git repo initialized on `main` with one commit; .gitignore excludes Cache, Workspaces, PluginsUserPreferences, tool folders, MCP configs and spk_debug_key.pem (private key). Public repo created and pushed on the user's go: https://github.com/Chinorab/keep-pace
 Hackathon rules (read 2026-10-22): submission deadline November 9, 2026, 5:00 pm ET; video under 3 min, public on YouTube, screen recording of the Lens Studio preview, no copyrighted music or third party trademarks; public GitHub/GitLab/Bitbucket repo with the Lens Studio project; English text description; judged equally on Design, Technical Implementation, Innovation, Presentation.
 Still open: the user's own judgment walk in Interactive Preview (brief "After the build: judge it"); recording the video; spoken cues once Snap sign-in works again.
 4. CLAD build + LEAF tests: DONE (2026-10-22).
@@ -34,7 +34,7 @@ Medical values verified (step 3 done for the brief): AHA 2025 Part 7 confirmed (
 - [x] 4. CLAD build in a fresh chat from the brief, LEAF tests per done criterion (2026-10-22: build done, 6/6 LEAF scenarios pass; user's preview judgment pending)
 - [x] 5. README (sourced problem, AR design choices, CLAD vs my decisions, honest preview limits), MIT license (draft 2026-10-22, user review pending)
 - [x] 6. Video script (max 2:45, no copyrighted music) and short Devpost description (draft 2026-10-22; video not recorded yet)
-- [ ] 7. Public GitHub repo with project files and `devpost/` (local repo + first commit done; public repo awaiting the user's go)
+- [x] 7. Public GitHub repo with project files and `devpost/`: https://github.com/Chinorab/keep-pace (public, pushed 2026-10-22 with the user's go; private key not in the repo, verified)
 
 ## Decisions so far
 - All deliverables in English; conversation with the user in French.
