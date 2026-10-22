@@ -1,0 +1,113 @@
+- !<AssetImportMetadata/4e5fe7e5-ade7-412c-bc83-e069d702efc2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a29b0a7d-5b14-41e5-90c1-7a4ba2e2ef8f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a29b0a7d-5b14-41e5-90c1-7a4ba2e2ef8f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 357239f1-f1e5-4169-9cfa-58c8e12223c3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/357239f1-f1e5-4169-9cfa-58c8e12223c3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 9f0df614-9101-4379-b8c2-09f3af39869d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bracketLeft: false
+    bracketLengthCm: false
+    bracketMaxOpacity: false
+    bracketRight: false
+    bracketStrokeCm: false
+    chestTarget: false
+    cueColor: false
+    cueMaterial: false
+    endPulseOffsetCm: false
+    idleOpacity: false
+    placementPreview: false
+    pushOffsetCm: false
+    quietOpacity: false
+    releaseOffsetCm: false
+    rhythmBrackets: false
+    targetDiameterCm: false
+    targetDot: false
+    targetRing: false
+    thickenFactor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - chestTarget: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      targetRing: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      targetDot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      placementPreview: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rhythmBrackets: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bracketLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bracketRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cueMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      bracketLengthCm: !<float> 12.000000
+      bracketStrokeCm: !<float> 1.000000
+      pushOffsetCm: !<float> 7.000000
+      releaseOffsetCm: !<float> 9.000000
+      thickenFactor: 2.200000
+      endPulseOffsetCm: !<float> 14.000000
+      bracketMaxOpacity: 0.600000
+      cueColor: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      targetDiameterCm: !<float> 6.000000
+      idleOpacity: 0.850000
+      quietOpacity: 0.300000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">KeepPaceChestCueView: target marker and rhythm brackets</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject chestTarget {"hint":"ChestTarget root: moved to the placed target position (marker, brackets, audio follow it)"}'
+    - '// @input SceneObject targetRing {"hint":"Ring of the target marker (RenderMeshVisual)"}'
+    - '// @input SceneObject targetDot {"hint":"Center dot of the target marker (RenderMeshVisual)"}'
+    - '// @input SceneObject placementPreview {"hint":"Ghost ring shown under the pointer where a pinch would place the target"}'
+    - '// @input SceneObject rhythmBrackets {"hint":"Group holding both brackets, centered on the target"}'
+    - '// @input SceneObject bracketLeft {"hint":"Left rhythm bracket (RenderMeshVisual)"}'
+    - '// @input SceneObject bracketRight {"hint":"Right rhythm bracket (RenderMeshVisual)"}'
+    - '// @input Asset.Material cueMaterial {"hint":"Unlit material cloned for every chest visual (light color, alpha blended)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Brackets</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Brackets"}'
+    - '// @input float bracketLengthCm = 12 {"hint":"Bracket length along the chest depth, cm (brief: about 12)", "widget":"slider", "min":4, "max":20, "step":0.5}'
+    - '// @input float bracketStrokeCm = 1 {"hint":"Bracket stroke, cm (brief: 1)", "widget":"slider", "min":0.3, "max":3, "step":0.1}'
+    - '// @input float pushOffsetCm = 7 {"hint":"Distance from target center on push, cm (brief: about 7, keeps 2 cm from 10 cm wide hands)", "widget":"slider", "min":5, "max":15, "step":0.5}'
+    - '// @input float releaseOffsetCm = 9 {"hint":"Distance from target center on release, cm (brief: about 9)", "widget":"slider", "min":5, "max":15, "step":0.5}'
+    - '// @input float thickenFactor = 2.2 {"hint":"Stroke multiplier while a correction is given (shape change, not color only)", "widget":"slider", "min":1, "max":4, "step":0.1}'
+    - '// @input float endPulseOffsetCm = 14 {"hint":"Distance reached by the slow end pulse, cm", "widget":"slider", "min":9, "max":25, "step":0.5}'
+    - '// @input float bracketMaxOpacity = 0.6 {"hint":"Bracket opacity at full guidance (thin and low opacity)", "widget":"slider", "min":0.1, "max":1, "step":0.05}'
+    - '// @input vec3 cueColor = "{1,1,1}" {"hint":"Bracket and marker color. Keep it light: the display is additive", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Target marker</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Target marker"}'
+    - '// @input float targetDiameterCm = 6 {"hint":"Marker diameter, cm (brief: about 6)", "widget":"slider", "min":3, "max":12, "step":0.5}'
+    - '// @input float idleOpacity = 0.85 {"hint":"Marker opacity before the first compression", "widget":"slider", "min":0.1, "max":1, "step":0.05}'
+    - '// @input float quietOpacity = 0.3 {"hint":"Marker opacity during a round and on the summary (quiet)", "widget":"slider", "min":0.05, "max":1, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

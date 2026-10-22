@@ -1,0 +1,82 @@
+- !<AssetImportMetadata/a5020020-6145-4169-a410-311358146205>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 25cef289-5a7a-446c-b402-6fec019a4f23
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 25cef289-5a7a-446c-b402-6fec019a4f23
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 676f38c7-8e46-48f9-8c65-7683f735a8f6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/676f38c7-8e46-48f9-8c65-7683f735a8f6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e6c925cc-2214-4383-b7f2-2547b1ad6f49
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    againLabel: false
+    buttonCapHeightCm: false
+    buttonSizeCm: false
+    lastRoundLabel: false
+    lineCapHeightCm: false
+    moveTargetLabel: false
+    panelWidthCm: false
+    rateLabel: false
+    regularityLabel: false
+    timeLabel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - panelWidthCm: !<float> 45.000000
+      lineCapHeightCm: !<float> 4.000000
+      buttonSizeCm: !<Vec2> {x: 16.000000, y: 8.000000}
+      buttonCapHeightCm: 1.600000
+      timeLabel: Time
+      rateLabel: Rate
+      regularityLabel: Regularity
+      lastRoundLabel: Last round
+      againLabel: Again
+      moveTargetLabel: Move target
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">KeepPaceSummaryPanelUI: round summary and actions</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Layout</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Layout"}'
+    - '// @input float panelWidthCm = 50 {"hint":"Panel width in cm (brief: about 45 cm; 50 fits the longest line without shrinking)", "widget":"slider", "min":30, "max":70, "step":1}'
+    - '// @input float lineCapHeightCm = 2.6 {"hint":"Cap height of the summary lines in cm (brief: about 4 cm; 2.6 keeps all lines the same size in the panel). Long lines shrink to fit", "widget":"slider", "min":1.5, "max":6, "step":0.1}'
+    - '// @input vec2 buttonSizeCm = "{16,8}" {"hint":"Button size in cm, width x height (brief: about 16 x 8 cm)"}'
+    - '// @input float buttonCapHeightCm = 1.4 {"hint":"Cap height of the button labels in cm", "widget":"slider", "min":0.8, "max":3, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Wording</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Wording"}'
+    - '// @input string timeLabel = "Time" {"hint":"Label of the round duration line"}'
+    - '// @input string rateLabel = "Rate" {"hint":"Label of the average cadence line"}'
+    - '// @input string regularityLabel = "Regularity" {"hint":"Label of the regularity line"}'
+    - '// @input string lastRoundLabel = "Last round" {"hint":"Label of the comparison line shown from the second round"}'
+    - '// @input string againLabel = "Again" {"hint":"Label of the new round button"}'
+    - '// @input string moveTargetLabel = "Move target" {"hint":"Label of the move target button"}'
+    - '// @ui {"widget":"group_end"}'

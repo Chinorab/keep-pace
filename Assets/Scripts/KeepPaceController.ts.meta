@@ -1,0 +1,114 @@
+- !<AssetImportMetadata/d22e7bad-21ad-4540-9db5-5927b997c541>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 60bbdb6c-e303-45a5-a8c8-5739a3c0dfef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 60bbdb6c-e303-45a5-a8c8-5739a3c0dfef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 46e32908-bff7-4cb3-a4b6-0e867e1b9cda
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/46e32908-bff7-4cb3-a4b6-0e867e1b9cda>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 01b7fa80-283f-4d0d-b221-662f9d28e6cf
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audioController: false
+    cameraObject: false
+    chestCue: false
+    clickFadeBeats: false
+    correctionMinGapSec: false
+    correctionReliableCount: false
+    debugLogs: false
+    driftGapSec: false
+    earlyEndIdleSec: false
+    fadeAfterOnPace: false
+    maxIntervalMs: false
+    metronomeBpm: false
+    minIntervalMs: false
+    reminderPanel: false
+    roundLengthSec: false
+    summaryPanel: false
+    targetHitRadiusCm: false
+    torsoInput: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - torsoInput: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      chestCue: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      audioController: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      reminderPanel: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      summaryPanel: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      cameraObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      minIntervalMs: !<float> 500.000000
+      maxIntervalMs: !<float> 600.000000
+      metronomeBpm: !<float> 110.000000
+      roundLengthSec: !<float> 120.000000
+      fadeAfterOnPace: !<float> 10.000000
+      clickFadeBeats: !<float> 3.000000
+      driftGapSec: !<float> 1.000000
+      earlyEndIdleSec: !<float> 3.000000
+      correctionMinGapSec: !<float> 5.000000
+      correctionReliableCount: !<float> 4.000000
+      targetHitRadiusCm: !<float> 5.000000
+      debugLogs: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">KeepPaceController: CPR rhythm coach (training only)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 torsoInput {"hint":"Torso pinch stand-in (Torso object)"}'
+    - '// @input AssignableType_2 chestCue {"hint":"Chest visuals: target marker and rhythm brackets"}'
+    - '// @input AssignableType_3 audioController {"hint":"Sounds at the chest target"}'
+    - '// @input AssignableType_4 reminderPanel {"hint":"Opening reminder and disclaimer panel"}'
+    - '// @input AssignableType_5 summaryPanel {"hint":"Round summary panel with Again and Move target"}'
+    - '// @input SceneObject cameraObject {"hint":"Main camera object (gets an Audio Listener for spatial cues)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Cadence (sourced: AHA 2025, ERC 2025)</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Cadence"}'
+    - '// @input float minIntervalMs = 500 {"hint":"Shortest on-pace interval, ms (120 per minute)"}'
+    - '// @input float maxIntervalMs = 600 {"hint":"Longest on-pace interval, ms (100 per minute)"}'
+    - '// @input float metronomeBpm = 110 {"hint":"Metronome tempo of brackets and click, per minute (middle of 100 to 120)", "widget":"slider", "min":100, "max":120, "step":1}'
+    - '// @input float roundLengthSec = 120 {"hint":"Round length from the first compression, seconds (switch compressors about every 2 min)", "widget":"slider", "min":10, "max":180, "step":5}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Coaching (design choices of this Lens)</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Coaching"}'
+    - '// @input float fadeAfterOnPace = 10 {"hint":"Consecutive on-pace compressions before brackets and click fade", "widget":"slider", "min":3, "max":30, "step":1}'
+    - '// @input float clickFadeBeats = 3 {"hint":"Beats over which the click lowers and stops once the brackets are gone", "widget":"slider", "min":1, "max":8, "step":1}'
+    - '// @input float driftGapSec = 1 {"hint":"No compression for longer than this counts as drift, seconds", "widget":"slider", "min":0.6, "max":3, "step":0.1}'
+    - '// @input float earlyEndIdleSec = 3 {"hint":"No compression for this long ends the round early, seconds", "widget":"slider", "min":1, "max":10, "step":0.5}'
+    - '// @input float correctionMinGapSec = 5 {"hint":"Minimum time between two spoken corrections, seconds", "widget":"slider", "min":1, "max":15, "step":0.5}'
+    - '// @input float correctionReliableCount = 4 {"hint":"Compressions needed in the last 3 s before a correction is spoken (reliable cadence)", "widget":"slider", "min":2, "max":8, "step":1}'
+    - '// @input float targetHitRadiusCm = 5 {"hint":"Pinches closer than this to the target center count as on the target, cm", "widget":"slider", "min":2, "max":10, "step":0.5}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Debug</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input bool debugLogs = true {"hint":"Print session events to the log"}'
+    - '// @ui {"widget":"group_end"}'

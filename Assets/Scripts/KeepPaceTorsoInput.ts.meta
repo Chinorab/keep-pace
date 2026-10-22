@@ -1,0 +1,74 @@
+- !<AssetImportMetadata/92c093c5-ed40-4cb2-87d2-3eb2ed17796a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 89669686-6fae-442d-95a0-0d498a4364e9
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 89669686-6fae-442d-95a0-0d498a4364e9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> c34ef924-bbed-48d1-9f8d-4a4fd6663e60
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/c34ef924-bbed-48d1-9f8d-4a4fd6663e60>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: ba3bb7a8-76b8-48db-b494-ee9f5df8a6b0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    chestTarget: false
+    debugColliders: false
+    hideStandInOnDevice: false
+    placeholderVisual: false
+    targetHitSizeCm: false
+    torsoSizeCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - placeholderVisual: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      chestTarget: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      torsoSizeCm: !<Vec3> {x: 60.000000, y: 20.000000, z: 35.000000}
+      targetHitSizeCm: !<float> 10.000000
+      hideStandInOnDevice: true
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">KeepPaceTorsoInput: pinch stand-in on the torso and target</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject placeholderVisual {"hint":"PlaceholderTorso (preview stand-in) visual, hidden on device"}'
+    - '// @input SceneObject chestTarget {"hint":"ChestTarget root (gets its own collider and Interactable)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec3 torsoSizeCm = "{60,20,35}" {"hint":"Torso size in cm: length (X) x height (Y) x width (Z). Brief default 60 x 20 x 35"}'
+    - '// @input float targetHitSizeCm = 10 {"hint":"Size of the target hit zone in cm (square, flat). Big on purpose", "widget":"slider", "min":4, "max":20, "step":0.5}'
+    - '// @input bool hideStandInOnDevice = true {"hint":"Hide the placeholder torso when running on Specs (keeps the hit zone)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Debug</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input bool debugColliders {"hint":"Draw collider wireframes"}'
+    - '// @ui {"widget":"group_end"}'
