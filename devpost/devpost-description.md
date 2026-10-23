@@ -27,10 +27,10 @@ I planned the Lens with the Devpost Learn skill pack: an interview that produced
 
 ## Accomplishments
 - Guidance that fades while you hold the rhythm and comes back the moment you drift, all in one continuous round.
-- Every behavior in the brief is covered by a passing LEAF test, two of them driven by real SIK pinches.
+- All five done criteria in the brief are covered by passing LEAF tests, two of them driven by real SIK pinches. What the tests cannot check (sound, the look of the brackets, comfort) is listed openly in the README.
 
 ## What we learned
-On glasses, less is the feature: the best moment is when the Lens shows nothing because you no longer need it.
+On glasses, less is the feature: the best moment is when the Lens shows nothing because you no longer need it. I also learned to design from the field of view, not from a screen: at 50 cm from the eyes only about 23 by 38 cm is visible, which turned a ring and a floating word into two brackets and a sound. And I learned to be honest about the preview: the logic is proven by tests, the feel on real glasses is not.
 
 ## What's next
 Compression detection from hand motion on device, a reliable hands-on-target check, memory across practice sessions, a shared trainer mode, and recorded spoken cues.

@@ -10,6 +10,7 @@ Built for the [Learn AR with SPECS](https://learn-specs.devpost.com) hackathon, 
 
 ## The problem
 
+- Help from people nearby is the gap. The American Heart Association says immediate CPR and AED use can double or even triple the chance of surviving cardiac arrest, yet less than half of people in cardiac arrest receive that help from someone nearby [6]. Campaigns such as World Restart a Heart Day, every October 16, exist to close it [7]. The ILCOR release for the first World Restart a Heart Day names the barrier: many people do not perform CPR because they do not know what to do or are afraid of hurting the person [8].
 - Bystander CPR saves lives. A 2025 meta-analysis of 14 observational studies (253,247 patients) found higher survival to discharge or at 30 days when a bystander performed CPR (pooled OR 1.72, 95% CI 1.40 to 2.12) [1].
 - Training alone does not make people act. In a study of 911 callers at cardiac arrests, trained bystanders were far more likely to perform CPR than untrained ones, yet among trained bystanders who did not act, panic was the most common reason given, ahead of worrying about doing it wrong [2]. Confidence, not knowledge of the steps, is the gap.
 - The guidelines support real-time feedback. The 2025 AHA guidelines state it is reasonable to use audiovisual feedback devices for real-time optimization of CPR performance (Class 2a) [3], and the 2025 AHA education chapter covers CPR feedback devices in training [4].
@@ -141,7 +142,11 @@ Lens Studio 5.24.1 (SPECS Base Template), Spectacles Interaction Kit, Spectacles
 4. Part 12: Resuscitation Education Science. 2025 American Heart Association Guidelines for CPR and ECC. Circulation. 2025. https://professional.heart.org/en/guidelines-statements/part-12-resuscitation-education-science-2025-american-heart-associationcir0000000000001374
 5. Smyth MA et al. European Resuscitation Council Guidelines 2025 Adult Basic Life Support. Resuscitation. 2025;215(Suppl 1):110771. doi:10.1016/j.resuscitation.2025.110771. Values read via the Resuscitation Council UK 2025 Adult BLS page: https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines
 
-The ERC 2025 compressor switch interval could not be confirmed from the full ERC chapter, so the 2 minute round cites AHA only.
+6. American Heart Association. Nation of Lifesavers. https://www.heart.org/nation-of-lifesavers
+7. American Heart Association. World Restart a Heart Day. https://www.heart.org/en/volunteer/world-restart-a-heart-day
+8. International Liaison Committee on Resuscitation (ILCOR) and SaveMiHeart. Importance of Bystander CPR for Survival Highlighted On World Restart A Heart Day (press release). https://www.ilcor.org/data/SaveMiHeart.pdf
+
+No ERC 2025 statement on a compressor switch interval could be found (the Resuscitation Council UK 2025 guideline that cites it gives none, and the full ERC chapter could not be read), so the 2 minute round cites AHA only.
 
 ## License
 

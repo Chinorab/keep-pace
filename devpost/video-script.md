@@ -1,6 +1,6 @@
 # Keep Pace: demo video script
 
-Target length: 2:40 (hard limit under 3:00; aim to stay under 2:45).
+Target length: 2:44 (hard limit under 3:00; stay under 2:45). Next steps (hand motion detection, spoken cues) live in the README and the Devpost description, not in the voiceover.
 Format: screen recording of Lens Studio's Interactive Preview, with a voiceover in English. Upload to YouTube as public.
 Audio: voiceover plus the Lens's own tones only. No music, no third party trademarks or footage.
 Before recording: open the project, Interactive Preview on, camera at the start position facing the reminder. Rehearse the click rhythm (about two clicks per second) with a metronome in one ear, off screen.
@@ -15,8 +15,9 @@ Before recording: open the project, Interactive Preview on, camera at the start 
 | 1:20 to 1:40 | Slow down on purpose. Brackets come back at once and thicken, the "Faster" cue plays. Speed back up; after ten good compressions they fade again. | When I slow down, the brackets come back immediately and thicken, with a short cue. No text near the hands, no red alert. When I recover, it goes quiet again. |
 | 1:40 to 2:00 | Stop clicking. After 3 seconds: brackets pulse out, end tone, "Round complete" tone. Look up: the summary sits beyond the manikin. | When I stop, the round ends: one slow pulse on the chest and a tone telling me to look up. The summary waits in front of me, out of view while I was looking at my hands. Time, rate, and regularity, measured from my compressions. |
 | 2:00 to 2:15 | Click "Again", do a short second round, stop, show the "Last round" comparison line. Briefly show "Move target". | Again starts a new round on the same spot, and the summary now compares my regularity with the last round. Move target lets me place it somewhere else. |
-| 2:15 to 2:32 | Cut to the design brief in the editor, then Lens Studio with the LEAF panel running a scenario and passing. | I planned this with the Devpost Learn skill pack, then CLAD built it in Lens Studio through the MCP. Six LEAF tests check the five behaviors I defined, and all of them pass. |
-| 2:32 to 2:42 | Back to the preview, guidance faded, hands on the chest. End card: "Keep Pace. Practice until the rhythm is yours." plus the repo link. | Next: real compression detection from hand motion, and spoken cues. Keep Pace. Practice until the rhythm is yours. |
+| 2:15 to 2:27 | Cut to the design brief in the editor, then Lens Studio with the LEAF panel running a scenario and passing. | I planned it in an interview with the Devpost Learn skill pack. CLAD built it in Lens Studio, and six LEAF tests check the five behaviors I defined. All pass. |
+| 2:27 to 2:38 | Back to the preview, kneeling view, guidance faded, nothing on the chest. | What I learned about designing for glasses: put the information on the thing it is about, size it to the narrow view, and let it disappear. The best moment is when the Lens shows nothing. |
+| 2:38 to 2:44 | End card: "Keep Pace. Practice until the rhythm is yours." plus the repo link. | Keep Pace. Practice until the rhythm is yours. |
 
 ## Notes for recording
 
