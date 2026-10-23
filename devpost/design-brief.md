@@ -93,7 +93,7 @@ Every medical value in the Lens comes from this table. Nothing else is invented.
 | Full recoil (not measured) | allow complete chest wall recoil (Class 2a) | allow the chest to recoil completely, avoid leaning |
 | Hand position | heel of one hand on the center of the chest (Class 1) | heel of one hand on the lower half of the sternum, other hand on top, fingers interlocked |
 | Order: call, push, defibrillator | activate the emergency response system, then immediately begin CPR; CPR until a defibrillator or AED is applied (Class 1) | call emergency services with the phone on speaker, start compressions as soon as possible, attach an AED as soon as available |
-| Switch compressors about every 2 minutes (round length) | "reasonable to switch chest compressors approximately every 2 min" (Class 2a) | not confirmed yet: the full ERC chapter could not be read; confirm before citing ERC for this value |
+| Switch compressors about every 2 minutes (round length) | "reasonable to switch chest compressors approximately every 2 min" (Class 2a) | not cited: the RCUK 2025 Adult BLS guideline (which cites ERC 2025) gives no switch interval, and the full ERC chapter could not be read (HTTP 403, checked 2026-10-23); the round length cites AHA only |
 | Compression-only CPR for untrained rescuers | compression-only is appropriate if untrained or unwilling to give breaths | continuous compressions if not trained to give rescue breaths |
 | Real-time feedback | "reasonable to use audiovisual feedback devices for real-time optimization of CPR performance" (Class 2a) | not checked |
 
@@ -106,7 +106,7 @@ Sources:
 - The pinch-per-compression input is a stand-in. Mouse clicking at about two per second is not CPR; the video and README must say so. Real compression detection on device is not demonstrated.
 - Interlaced fingers may break SPECS hand tracking on device; the brackets and click are designed to work with no measurement at all.
 - Spoken cues depend on pre-recorded clips being generated; if not, distinct tones plus the bracket thickening carry the correction.
-- The ERC 2 minute switch interval is not yet confirmed from the full ERC 2025 chapter.
+- The 2 minute round cites AHA 2025 only: no ERC 2025 statement on a switch interval could be found (RCUK 2025 summary silent, full chapter unreadable, checked 2026-10-23).
 - The 3 s early-end threshold and the "ten on-pace compressions" fade rule are design choices, not guideline values.
 
 ## Build notes for CLAD
