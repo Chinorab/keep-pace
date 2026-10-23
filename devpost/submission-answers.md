@@ -1,15 +1,15 @@
 # Keep Pace: Devpost submission form answers
 
-Draft answers for the Learn AR with SPECS submission form (fields as listed by Devpost on 2026-10-23). Fields marked **YOUR CHOICE** are personal answers: pick them yourself. Facts that may help are noted under each one.
+Draft answers for the Learn AR with SPECS submission form (fields as listed by Devpost on 2026-10-23). Answers marked **Proposed** were chosen by the agent from the project's facts at the user's request; change any of them before submitting. The three eligibility checkboxes are legal statements only you can make.
 
 Deadline: November 9, 2026, 5:00 pm ET.
 
 ## Eligibility and identity
 
-- **Submitter Type:** YOUR CHOICE (Individual / Team / Organization).
-- **Organization name:** leave empty unless you submit for an organization.
-- **Submitter Country of Residence:** YOUR CHOICE.
-- **Age of majority / Eligible jurisdiction / Not a Sponsor or Devpost employee:** three checkboxes to tick yourself after reading the Official Rules.
+- **Submitter Type:** Proposed: **Individual** (built alone, under the Chinorab account).
+- **Organization name:** leave empty.
+- **Submitter Country of Residence:** Proposed: **France**. Confirm it: it is inferred, not stated.
+- **Age of majority / Eligible jurisdiction / Not a Sponsor or Devpost employee:** tick them yourself after reading the Official Rules. Excluded places include Brazil, Quebec, Russia, Crimea, Cuba, Iran and North Korea.
 
 ## Public code repository
 
@@ -33,19 +33,19 @@ Leave empty, or add a link if you post about the project. It does not affect jud
 
 ## Had you used Lens Studio before this hackathon?
 
-YOUR CHOICE. Fact: Lens Studio was not installed on this computer when the project started (2026-10-21).
+Proposed: **Never**. Lens Studio was not installed on this computer when the project started (2026-10-21).
 
 ## Did CLAD build what your design brief described?
 
-YOUR CHOICE. Facts: the whole flow was built in one pass and all six LEAF scenarios passed. CLAD made two adjustments: the placeholder torso sits on the preview floor about 150 cm below the camera instead of 110 cm (the user presses Q to kneel), and the summary text is 2.6 cm tall instead of 4 cm so the longest line fits. Spoken cues are tones, because the Snap account service was down. This fits "Yes, on the first try" or "Mostly, after a few fixes", depending on how you count those adjustments.
+Proposed: **Yes, on the first try**. The whole flow was built in one pass and all six LEAF scenarios passed without a fix round. CLAD made two adjustments on its own (torso on the preview floor about 150 cm below the camera instead of 110 cm; summary text 2.6 cm tall instead of 4 cm), and spoken cues are tones because the Snap account service was down. Pick "Mostly, after a few fixes" if you count those as fixes.
 
 ## Which step took the most time for what you got out of it?
 
-YOUR CHOICE. Facts: setup took the first evening (installing Lens Studio, creating the SPECS project, installing CLAD, getting the MCP to load); the build was paused overnight because of the Snap account outage.
+Proposed: **Setting up Lens Studio**. Setup took the first evening (installing Lens Studio, creating the SPECS project, installing CLAD, getting the MCP to load) and produced nothing visible; the sign-in check then held the build overnight.
 
 ## Did the cost of AI affect what you did?
 
-YOUR CHOICE.
+Proposed: **No, I never thought about it**. Nothing in the project was cut or switched to a cheaper model for cost reasons. This one is about what you thought, so change it if it is wrong.
 
 ## Where did you get stuck, or nearly quit?
 
@@ -60,12 +60,12 @@ Make the sign-in state reliable and visible to the agent. When `isAuthorized` di
 
 ## How likely are you to use Specs and Lens Studio again?
 
-YOUR CHOICE.
+Proposed: **Likely**. Change it to your own view.
 
 ## How much did this hackathon help you develop new skills or knowledge?
 
-YOUR CHOICE.
+Proposed: **A lot**. The project went from no Lens Studio install to a tested SPECS Lens, with a field of view based design.
 
 ## Did this change what you think makes a good AR app?
 
-YOUR CHOICE. The description and the video already state what changed: put the information on the thing it is about, size it to the narrow view, and let it disappear when it is no longer needed.
+Proposed: **Yes, a lot**. The description and the video already say what changed: put the information on the thing it is about, size it to the narrow view, and let it disappear when it is no longer needed.
