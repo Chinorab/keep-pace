@@ -6,7 +6,7 @@ Keep Pace is for people who took a CPR course or watched a CPR video but would n
 
 **Keep Pace is a practice tool. It is not an emergency tool.** It does not replace certified CPR training or the instructions of an emergency dispatcher. The Lens says so on its first screen.
 
-Demo video (2:44, recorded in the Lens Studio preview): https://youtu.be/4NiHodAGyXI
+Demo video (2:41, recorded in the Lens Studio preview): https://youtu.be/i0OAk4eQt5A
 
 Built for the [Learn AR with SPECS](https://learn-specs.devpost.com) hackathon, planned with the Devpost Learn skill pack and built with CLAD, Lens Studio 5.24.1 and the Lens Studio MCP.
 
