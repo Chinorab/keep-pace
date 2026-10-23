@@ -21,7 +21,7 @@ export class KeepPaceTorsoInput extends BaseScriptComponent {
   @ui.label('<span style="color: #60A5FA;">References</span>')
   @ui.group_start("References")
   @input
-  @hint("PlaceholderTorso (preview stand-in) visual, hidden on device")
+  @hint("Manikin visual (preview stand-in), hidden on device. A single box mesh is scaled to the torso size; a group is left as built")
   placeholderVisual: SceneObject
   @input
   @hint("ChestTarget root (gets its own collider and Interactable)")

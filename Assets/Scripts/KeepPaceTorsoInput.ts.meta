@@ -57,7 +57,7 @@
     - '// @ui {"widget":"separator"}'
     - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
     - '// @ui {"widget":"group_start", "label":"References"}'
-    - '// @input SceneObject placeholderVisual {"hint":"PlaceholderTorso (preview stand-in) visual, hidden on device"}'
+    - '// @input SceneObject placeholderVisual {"hint":"Manikin visual (preview stand-in), hidden on device. A single box mesh is scaled to the torso size; a group is left as built"}'
     - '// @input SceneObject chestTarget {"hint":"ChestTarget root (gets its own collider and Interactable)"}'
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"separator"}'

@@ -71,6 +71,7 @@ Assets/Scripts/
   KeepPaceReminderPanelUI.ts  Opening reminder and disclaimer (UI Kit).
   KeepPaceSummaryPanelUI.ts   Round summary and the Again / Move target buttons (UI Kit).
   KeepPaceMeshes.ts           Flat chest meshes built in code.
+  KeepPaceManikinVisual.ts    Rounded shapes for the preview stand-in manikin (MeshBuilder).
 Assets/Tests/                 LEAF scenarios, one or two per done criterion.
 Assets/Audio/                 Five short tones synthesized locally.
 devpost/design-brief.md       The approved design brief the Lens was built from.
@@ -89,7 +90,7 @@ I planned the Lens in an interview with the Devpost Learn skill pack and approve
 
 CLAD (the `ls-clad` plugin, through the Lens Studio MCP) built the scene, wrote the scripts and tests, and made these build-time adjustments:
 
-- The preview floor sits about 150 cm below the starting camera, not 110 cm, so the placeholder torso lies on that floor and the user presses Q to kneel. A Lens cannot set the preview camera height. The whole stand-in hangs under one root, "Manikin (preview stand-in)".
+- The preview floor sits about 150 cm below the starting camera, not 110 cm, so the stand-in manikin lies on that floor and the user presses Q to kneel. A Lens cannot set the preview camera height. The whole stand-in hangs under one root, "Manikin (preview stand-in)".
 - Summary text has a 2.6 cm cap height in a 50 cm panel instead of 4 cm in 45 cm, because "Regularity 100%" would not fit on one line at 4 cm. Both are Inspector inputs.
 - An early-end round's duration runs from the first to the last compression, so the 3 idle seconds do not count.
 
@@ -111,7 +112,7 @@ Not covered by any test: that the sounds actually play and come from the chest; 
 ## Honest limits of the preview
 
 - **The compression input is a stand-in.** In the preview, each pinch (a mouse click) on the target is one compression. Nobody pinches during real CPR, and clicking twice a second is not CPR. Real compression detection from hand motion on device is not built or claimed.
-- **The manikin is a stand-in.** A 60 x 35 x 20 cm placeholder torso lies on the preview floor. The Lens never recognizes a manikin; on device the user places the target with a pinch, and the placeholder is hidden.
+- **The manikin is a stand-in.** A simple CPR training manikin built from rounded shapes lies on its back on the preview floor: head with a nose, neck, shoulders, upper arm stumps, chest and abdomen, about 73 cm long including the head, 44 cm across the shoulders, with the chest top 20 cm above the floor and the lower half of the sternum lightly marked. It is a preview stand-in, not a model of a real product. The pinch hit zone is still a 60 x 35 x 20 cm box over the torso, so a pinch on the head is ignored. The Lens never recognizes a manikin; on device the user places the target with a pinch, and the stand-in is hidden.
 - **No spoken words yet.** Snap's account service was down during the build, so the cues are five locally synthesized tones (click, two rising notes for "Faster", two falling notes for "Slower", an end chime, a "Round complete" chime). Each cue has its own play function, so recorded speech can replace the tones without code changes.
 - **Logic proven, feel unproven.** The tests and the preview prove the logic. Comfort at about 50 cm from the eyes over a full round, real hand tracking with interlaced fingers, and how it feels on real glasses can only be judged on SPECS hardware, which I did not have.
 
@@ -119,7 +120,7 @@ Not covered by any test: that the sounds actually play and come from the chest; 
 
 1. Open `keep-pace.esproj` in Lens Studio 5.22 or later (built with 5.24.1).
 2. In the Preview panel, switch to Interactive Preview. WASD moves, Q and E go down and up, right-drag looks around. A click is a pinch.
-3. Read the reminder, then press Q to kneel and click the center of the placeholder chest to place the target.
+3. Read the reminder, then press Q to kneel and click the marked lower sternum of the stand-in manikin to place the target.
 4. Click the target about twice a second. Hold the pace and watch the brackets fade; slow down and they come back.
 5. Stop for 3 seconds, look up at the summary, then choose Again or Move target.
 6. To run the tests: open the LEAF panel, then run the scenarios listed above.
